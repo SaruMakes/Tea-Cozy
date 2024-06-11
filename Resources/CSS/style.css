@@ -76,3 +76,29 @@ main {
 }
 
 /*Our Mission Section*/
+
+#our-mission {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#our-mission #our-mission-container {
+    margin: 0;
+    padding: 0;
+    width: 75rem;
+    height: 43.75rem;
+    background-image: url('../Images/img-mission-background.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+#our-mission #our-mission-container .content-container {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    line-height: 1rem; /*Try to figure out why I can't control the line spacing better, as well as the uppwer and lower margins*/
+}
+
+/*Tea of the Month section*/
+

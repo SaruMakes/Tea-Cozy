@@ -23,3 +23,12 @@
 
 
 <h2>Creating the Our Mission Section</h2>
+
+    My plan for this section was basically to create a container for the full vertical section and have that span the entire page width. Then within this, I would have a container, which would have the background image in it, and the set width and height from the specs. Inside this, I would have a container, with both paragraphs nested inside it and stacked vertically. I got the main setup sorted very quickly and it worked as expected.
+    
+    However, I spent the majority of the time simply trying to get the horizontal black container, to decrease in size vertically and to have less padding around the paragraphs. In the end, the only thing that seemed to make a difference, was for me to set the line-height to something smaller than the actual height of the text, to decrease this padding/margin around the lines. This only worked to some extent, but didn't fully solve the issue.
+
+- I'm not super pleased with the point that I left the section in. It looks just fine, but it irks me when something isn't doing what I'd like it to do, and I also don't understand why this is. I tried to troubleshoot it and the dev tools suggest that maybe it's something in the normalization css, which is causing the issue. However, I couldn't see what would cause it, while also ignoring the specificity of my code. I might return to this issue, to see if I can figure out the cause, but for now I've decided to move on, so as to not spend too much time on this with greatly diminishing returns.
+
+
+<h2>Creating the Tea of the Month section</h2> 
