@@ -97,8 +97,148 @@ main {
 #our-mission #our-mission-container .content-container {
     background-color: rgb(0, 0, 0);
     width: 100%;
-    line-height: 1rem; /*Try to figure out why I can't control the line spacing better, as well as the uppwer and lower margins*/
+     /*Try to figure out why I can't control the line spacing better, as well as the upper and lower margins*/
+}
+
+#our-mission #our-mission-container .content-container h2, h4 {
+    margin: 0.7rem 0;
+}
+
+@media screen and (max-width: 1025px) {
+    #our-mission #our-mission-container .content-container {
+        padding: 0 2rem;
+    }
+    
+    #our-mission #our-mission-container .content-container h4 {
+        line-height: 1.2;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #our-mission #our-mission-container .content-container {
+        padding: 0 1.5rem;
+    }
 }
 
 /*Tea of the Month section*/
 
+#tea-of-the-month {
+    width: 100%;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+#tea-of-the-month #tea-of-the-month-container {
+    width: 62.5rem;
+}
+
+#tea-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-container {
+    display: flex;
+    width: 18.75rem;
+    margin: 0.25rem 1rem;
+    flex-direction: column;
+}
+
+.img-container img {
+    height: 12.5rem;
+    width: 18.75rem;
+    object-fit: cover;
+}
+
+.img-container p {
+    margin-top: 0.625rem;
+}
+
+/*Locations Section*/
+
+#locations {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#locations #locations-background {
+    display: flex;
+    height: 35.625rem;
+    width: 75rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../Images/img-locations-background.jpg');
+    background-position: center 0;
+    background-size: cover;
+}
+
+#locations .header-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: end;
+}
+
+#locations .header-container h2 {
+    margin: 0;
+}
+
+#locations #locations-background #locations-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#locations #locations-background #locations-container .location-box {
+    width: 18.75rem;
+    background-color: black;
+    margin: 0.9375rem 1.25rem;
+    flex-shrink: 1;
+}
+
+#locations #locations-background #locations-container .location-box p {
+    margin-bottom: 2.4rem;
+}
+
+/*Locations section for smaller devices*/
+
+@media screen and (max-width: 1025px) {
+    #locations #locations-background {
+        height: 50rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #locations #locations-background {
+        height: 70rem;
+    }
+}
+/*The Tea Cozy section*/
+
+#the-tea-cozy {
+    width: 100%;
+    height: 12.5rem;
+    padding-bottom: 3rem;
+    font-weight: bolder;
+}
+
+/*Footer section*/
+
+footer {
+    display: flex;
+    margin-left: 1.25rem;
+}
+
+@media screen and (max-width: 680px) {
+    footer {
+        margin-left: 0;
+        justify-content: center;
+    }
+}
