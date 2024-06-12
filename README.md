@@ -1,6 +1,6 @@
-#Tea Cozy - Codecademy HTML/CSS project
+# Tea Cozy - Codecademy HTML/CSS project
 
-##Planning phase
+##P lanning phase
     
 <p>Looking at the Redline design specifications, I was wondering if it would be best to use a Reset.css stylesheet or something else. After doing some research, reading up on other developers' opinions and recommendations regarding resets as well as normalize.css, I've come to the conclusion that it would probably be best to use a normalize.css sheet. My reasoning is that, since the design specs specify h1-h6 header stylings for various paragraphs and headers, I would have to recreate the stylings by eye, if I decided to reset all of the stylings, as a reset will have all the headers be looking exactly the same.</p>
 
@@ -9,7 +9,7 @@ Other than that, I don't think there's all that much extra to this one. Since I'
 If you want to have a look at the specsheet, then simply open "img-tea-cozy-redline.jpg" in the root folder.
 
 
-##Creating the Header/Navbar
+## Creating the Header/Navbar
 
 So, my plan for this one was pretty simple: I wanted to use a flexbox to nest the logo and the navbar list items in. Then I'd apply a "justify-content: space-between" to push the two containers out to either end of the header, pushing up against the 10px side padding. This worked fine. 
 
@@ -22,7 +22,7 @@ The rest of the work consisted of me adjusting the settings to achieve the desir
 - Overall I'm fairly happy with how the work on the header went. I'm still not quick at coding in CSS at all, but every new project is an opportunity to learn and get better and faster. I'm happy that all of my initial HTML structure didn't need to be changed, other than me deciding to make the navbar into actual links to the various sections on the page + making the logo a link to get to the top of the page. I had to refresh how to do this, but in doing so, I was also pleased to see that my structuring of the page in HTML meant, that it was very simple to do.
 
 
-##Creating the Our Mission Section
+## Creating the Our Mission Section
 
 My plan for this section was basically to create a container for the full vertical section and have that span the entire page width. Then within this, I would have a container, which would have the background image in it, and the set width and height from the specs. Inside this, I would have a container, with both paragraphs nested inside it and stacked vertically. I got the main setup sorted very quickly and it worked as expected.
     
@@ -33,7 +33,7 @@ However, I spent the majority of the time simply trying to get the horizontal bl
 - (EDIT) After revisiting the section and looking at the code with fresh eyes, I realised that there must've been some margins applied to my headers (since the specs use headers heavily for styling purposes), but after zeroing the margins, things worked in a much more predictable manner.
 
 
-##Creating the Tea of the Month section 
+## Creating the Tea of the Month section 
 
 This was one of the sections that I was thinking might end up causing me the most trouble, due to my past experiences creating similar layouts. My idea for this section was to, once again, have a man section that stretched the entire page width. Inside of this, I nested the main content section with the fixed width (which does shrink responsively as needed). It was then that I realised that I needed a separate container for the headlines and the images (incl. captions), as each needed different kinds of styling. So I made the new div-wrappers and got to work on setting up the styling. 
 
@@ -42,7 +42,7 @@ The styling didn't act exactly the way I wanted it to, to begin with, but throug
 - This section went better than I feared. I feel like the troubleshooting and resolutions came more easily than before, and, while I did see the same odd line-spacing behavior from the past section again, it caused less of an issue this time. I also was able to figure out that it seems related to having the text content in flexbox(es). I'm still not sure how to fix it though.
 
 
-##Creating the Locations section
+## Creating the Locations section
 
 This section was a really difficult one for me. I'd decided to still go with Flexbox as my solution for spacing the location textboxes, but as soon as I added the "Locations" above the top box, it broke my layout. It kept pushing the boxes down, leaving them no longer centered vertically.
 
@@ -53,7 +53,7 @@ I also found that in order to match the image in the spec sheet, the listed cont
 - (EDIT) I went back to having a go at this section again, and after some experimentation, it dawned on me that I could still use Flexboxes, I simply needed to split the section into three horizontal boxes. The center one contains the location textboxes, the top one contains only the header, and the bottom one is a carbon copy of the top box, but without any content in it. The top and bottom boxes/containers are the same height, so they keep the textboxes nicely centered vertically. Meanwhile, I can align the text inside the top box, without messing with the overall layout. I set the 15px margin both to the top and bottom of the middle container, to keep it centered, and zeroed the margins of the H2 header.
 
 
-##Creating the "The Tea Cozy" contacts section and footer
+## Creating the "The Tea Cozy" contacts section and footer
 
 These two sections were very simple and quick for me to do. All that was required was some minor experimentation with padding, to achieve the look of the specification image, as the provided measurements were not detailed enough.
 
